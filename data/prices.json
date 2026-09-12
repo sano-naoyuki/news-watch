@@ -1,6 +1,6 @@
 {
   "as_of": "2026-09-11",
-  "generated_at": "2026-09-12T13:48:41+0900",
+  "generated_at": "2026-09-13T08:58:55+0900",
   "note": "as_of は取得できた最新の営業日。stale に載った銘柄はそれより古い日付のデータ",
   "stale": [],
   "indices": [
@@ -57,6 +57,16 @@
       "source": "yfinance"
     },
     {
+      "name": "日清食品HD",
+      "code": "2897",
+      "date": "2026-09-11",
+      "close": 2937.5,
+      "prev_close": 2901.5,
+      "change": 36.0,
+      "pct": 1.24,
+      "source": "yfinance"
+    },
+    {
       "name": "サトーHD",
       "code": "6287",
       "date": "2026-09-11",
@@ -64,6 +74,16 @@
       "prev_close": 2640.0,
       "change": -27.0,
       "pct": -1.02,
+      "source": "yfinance"
+    },
+    {
+      "name": "三井物産",
+      "code": "8031",
+      "date": "2026-09-11",
+      "close": 5060.0,
+      "prev_close": 5093.0,
+      "change": -33.0,
+      "pct": -0.65,
       "source": "yfinance"
     },
     {
