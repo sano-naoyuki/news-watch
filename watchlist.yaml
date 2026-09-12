@@ -1,0 +1,160 @@
+# 日次企業ニュース監視リスト（news-watch の正本）
+#
+# - code: 東証コード。非上場・上場廃止は null にする（株価は追わない、ニュースのみ）
+# - tag: client（既存クライアント）/ prospect（提案中・接触中）/ watch（動向監視のみ）
+# - search_hints: 一般名詞と紛らわしい社名の検索補助（WebSearch でこの語を併用する）
+# - note: 監視上の注意（同名他社との取り違え等）
+
+companies:
+  - name: ヤマト
+    full_name: ヤマト株式会社
+    code: null
+    listed: false
+    sector: 文具・接着剤（アラビックヤマト）
+    tag: client
+    search_hints: ["ヤマト株式会社 文具", "アラビックヤマト"]
+    note: 東証 7886「ヤマト・モビリティ&Mfg.」（旧ヤマトインダストリー）とは別会社。ヤマト運輸・ヤマトHD とも別。株価は追わない
+
+  - name: ミツカン
+    full_name: 株式会社Mizkan Holdings（ミツカングループ）
+    code: null
+    listed: false
+    sector: 食品・調味料
+    tag: client
+    search_hints: ["ミツカン"]
+
+  - name: ヘリオステクノHD
+    full_name: ヘリオス テクノ ホールディング株式会社
+    code: "6927"
+    listed: true
+    sector: 照明・電子部品
+    tag: watch
+    search_hints: ["ヘリオステクノホールディング"]
+
+  - name: ダイセル
+    full_name: 株式会社ダイセル
+    code: "4202"
+    listed: true
+    sector: 化学
+    tag: client
+    search_hints: ["ダイセル"]
+
+  - name: ENEOS HD
+    full_name: ENEOSホールディングス株式会社
+    code: "5020"
+    listed: true
+    sector: 石油元売り
+    tag: client
+    search_hints: ["ENEOSホールディングス", "ENEOS"]
+
+  - name: クレオ
+    full_name: 株式会社クレオ（洗浄機メーカー）
+    code: null
+    listed: false
+    sector: 産業用洗浄機
+    tag: watch
+    search_hints: ["クレオ 洗浄機"]
+    note: 東証 9698「株式会社クレオ」（業務ソフト）とは別会社。株価は追わない
+
+  - name: マクニカHD
+    full_name: マクニカホールディングス株式会社
+    code: "3132"
+    listed: true
+    sector: 半導体商社
+    tag: watch
+    search_hints: ["マクニカホールディングス", "マクニカ"]
+
+  - name: ワコールHD
+    full_name: 株式会社ワコールホールディングス
+    code: "3591"
+    listed: true
+    sector: インナーウェア
+    tag: watch
+    search_hints: ["ワコールホールディングス", "ワコール"]
+
+  - name: 日本精工NSK
+    full_name: 日本精工株式会社
+    code: "6471"
+    listed: true
+    sector: ベアリング
+    tag: watch
+    search_hints: ["日本精工", "NSK ベアリング"]
+
+  - name: 新和環境
+    full_name: 新和環境株式会社
+    code: null
+    listed: false
+    sector: 環境・廃棄物処理
+    tag: watch
+    search_hints: ["新和環境"]
+
+  - name: クボタ
+    full_name: 株式会社クボタ
+    code: "6326"
+    listed: true
+    sector: 農機・建機
+    tag: client
+    search_hints: ["クボタ"]
+
+  - name: キョウデン
+    full_name: 株式会社キョウデン
+    code: null
+    listed: false
+    sector: 電子機器
+    tag: watch
+    search_hints: ["キョウデン"]
+    note: 旧東証 6881。2023 年に上場廃止。株価は追わない
+
+  - name: TDK
+    full_name: TDK株式会社
+    code: "6762"
+    listed: true
+    sector: 電子部品
+    tag: watch
+    search_hints: ["TDK"]
+
+  - name: サトーHD
+    full_name: サトーホールディングス株式会社
+    code: "6287"
+    listed: true
+    sector: 自動認識・バーコード
+    tag: watch
+    search_hints: ["サトーホールディングス"]
+
+  - name: パラマウントベッドHD
+    full_name: パラマウントベッドホールディングス株式会社
+    code: null
+    listed: false
+    sector: 医療・介護用ベッド
+    tag: client
+    search_hints: ["パラマウントベッド"]
+    note: 旧東証 7817。2025 年 11 月に MBO 成立で上場廃止。株価は追わない
+
+  - name: MK樫山
+    full_name: MK樫山株式会社
+    code: null
+    listed: false
+    sector: 自動車部品
+    tag: watch
+    search_hints: ["MK樫山"]
+
+  - name: プロテリアル
+    full_name: 株式会社プロテリアル
+    code: null
+    listed: false
+    sector: 特殊鋼・磁性材料（旧日立金属）
+    tag: watch
+    search_hints: ["プロテリアル"]
+    note: 2023 年に非公開化。株価は追わない
+
+  - name: 江崎グリコ
+    full_name: 江崎グリコ株式会社
+    code: "2206"
+    listed: true
+    sector: 食品
+    tag: watch
+    search_hints: ["江崎グリコ", "グリコ"]
+
+indices:
+  - name: 日経平均
+    symbol: "^N225"
