@@ -12,6 +12,8 @@
    - 土日祝に走った場合は投稿せずに終了する（「本日は非営業日のため投稿なし」と出力のみ）。
 3. `watchlist.yaml` を読む。`listed: true` かつ `code` がある企業だけが株価対象。それ以外はニュースのみ監視する。
    `note` に同名他社の注意がある企業（ヤマト、クレオ 等）は、検索時に `search_hints` の語を併用し、別会社の記事を混ぜない。
+4. `scope` がある企業（三井物産、日清食品HD 等）は **scope に該当するニュースだけ**を対象にする。scope 外の全社ニュース（決算、全社人事、他部門の案件）はトップピックにも「その他の動き」にも載せない。株価は通常どおり表示する。
+5. `tag` は要約の「なぜ Prossimo として注目するか」の材料にする（client は既存の支援内容との関係、prospect は提案の切り口との関係）。tag を本文に書く必要はない。
 
 ## 1. 株価（`data/prices.json` を読むだけ。Web では取らない）
 
@@ -25,7 +27,7 @@
 
 ## 2. ニュース調査（WebSearch 中心）
 
-- 対象企業ごとに、調査窓口内の報道・IR・適時開示・プレスリリースを WebSearch で探す。企業名と `search_hints` を組み合わせ、日付語（「9月11日」等）も併用する。
+- 対象企業ごとに、調査窓口内の報道・IR・適時開示・プレスリリースを WebSearch で探す。企業名と `search_hints` を組み合わせ、日付語（「9月11日」等）も併用する。`note` に「英語で検索」とある企業は英語で検索する。
 - WebFetch はブロックされるドメインが多い。次のドメインには **最初から WebFetch しない**（EGRESS_BLOCKED になる）:
   nikkei.com / finance.yahoo.co.jp / news.yahoo.co.jp / kabutan.jp / minkabu.jp / zaikei.co.jp / traders.co.jp / prtimes.jp / google.com / investing.com / stockanalysis.com / tradingeconomics.com / stooq.com / 各社公式サイト（kubota.co.jp, tdk.com, daicel.com 等）
   上記以外のドメインも、一度 EGRESS_BLOCKED になったら同じドメインには再試行しない。WebSearch のスニペットで確認できる範囲を事実として扱い、確認できないことは書かない。

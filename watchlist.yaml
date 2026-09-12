@@ -2,10 +2,24 @@
 #
 # - code: 東証コード。非上場・上場廃止は null にする（株価は追わない、ニュースのみ）
 # - tag: client（既存クライアント）/ prospect（提案中・接触中）/ watch（動向監視のみ）
+# - scope: 大企業で監視対象を絞る場合に記述。scope 外の全社ニュース（決算・全社人事・他部門）は載せない
 # - search_hints: 一般名詞と紛らわしい社名の検索補助（WebSearch でこの語を併用する）
 # - note: 監視上の注意（同名他社との取り違え等）
+#
+# タグの根拠（2026-09-12 時点、Slack #japan_biz_dev 台帳と各案件チャンネルより）:
+#   client   : 古賀オール(#koga-project) / ヤマト(#yamato) / ダイセル・ENEOS・パラマウントベッド・ミツカン(個別コンサル) / クボタ(FCF レター)
+#   prospect : 三井物産(#mitsui_lng, #japan_biz_mcep) / Square Resources(#square-resources) / ヘリオステクノ・サトー・TDK(7月に提案書) / 日清食品HD(インド Snowflake 提案)
 
 companies:
+  # ---- client ----
+  - name: 古賀オール
+    full_name: 古賀オール株式会社（古賀オールホールディングス）
+    code: null
+    listed: false
+    sector: 鋼材加工・流通
+    tag: client
+    search_hints: ["古賀オール"]
+
   - name: ヤマト
     full_name: ヤマト株式会社
     code: null
@@ -23,14 +37,6 @@ companies:
     tag: client
     search_hints: ["ミツカン"]
 
-  - name: ヘリオステクノHD
-    full_name: ヘリオス テクノ ホールディング株式会社
-    code: "6927"
-    listed: true
-    sector: 照明・電子部品
-    tag: watch
-    search_hints: ["ヘリオステクノホールディング"]
-
   - name: ダイセル
     full_name: 株式会社ダイセル
     code: "4202"
@@ -47,6 +53,81 @@ companies:
     tag: client
     search_hints: ["ENEOSホールディングス", "ENEOS"]
 
+  - name: クボタ
+    full_name: 株式会社クボタ
+    code: "6326"
+    listed: true
+    sector: 農機・建機
+    tag: client
+    search_hints: ["クボタ"]
+
+  - name: パラマウントベッドHD
+    full_name: パラマウントベッドホールディングス株式会社
+    code: null
+    listed: false
+    sector: 医療・介護用ベッド
+    tag: client
+    search_hints: ["パラマウントベッド"]
+    note: 旧東証 7817。2025 年 11 月に MBO 成立で上場廃止。株価は追わない
+
+  # ---- prospect ----
+  - name: 三井物産
+    full_name: 三井物産株式会社
+    code: "8031"
+    listed: true
+    sector: 総合商社
+    tag: prospect
+    scope: >-
+      グローバルLNG本部・ガス物流（Cameron LNG の引取・トレーディング、LNG 船・物流）と、
+      デジタル・電力ソリューション本部（電力・デジタル PF 事業）に関するものだけ。
+      全社決算、全社人事、他セグメント（金属資源、食料、化学品、機械 等）の案件は載せない。
+    search_hints: ["三井物産 LNG", "三井物産 Cameron LNG", "三井物産 ガス", "三井物産 電力 デジタル"]
+
+  - name: Square Resources
+    full_name: Square Resources Pty Ltd（豪ブリスベン）
+    code: null
+    listed: false
+    sector: 石炭トレーディング
+    tag: prospect
+    search_hints: ["Square Resources coal Brisbane"]
+    note: 英語で検索する。日本語報道はほぼ無い。株価は追わない
+
+  - name: ヘリオステクノHD
+    full_name: ヘリオス テクノ ホールディング株式会社
+    code: "6927"
+    listed: true
+    sector: 照明・電子部品
+    tag: prospect
+    search_hints: ["ヘリオステクノホールディング"]
+
+  - name: サトーHD
+    full_name: サトーホールディングス株式会社
+    code: "6287"
+    listed: true
+    sector: 自動認識・バーコード
+    tag: prospect
+    search_hints: ["サトーホールディングス"]
+
+  - name: TDK
+    full_name: TDK株式会社
+    code: "6762"
+    listed: true
+    sector: 電子部品
+    tag: prospect
+    search_hints: ["TDK"]
+
+  - name: 日清食品HD
+    full_name: 日清食品ホールディングス株式会社
+    code: "2897"
+    listed: true
+    sector: 食品
+    tag: prospect
+    scope: >-
+      インド事業（Nissin India / Indo Nissin）と、グループのデータ基盤・IT・生成AI（Snowflake、統合DB、マスター整備 等）に関するものだけ。
+      新商品（カップヌードル等）の発売情報、全社決算、他地域の案件は載せない。
+    search_hints: ["日清食品 インド", "Nissin India", "日清食品 データ基盤", "日清食品 生成AI"]
+
+  # ---- watch ----
   - name: クレオ
     full_name: 株式会社クレオ（洗浄機メーカー）
     code: null
@@ -88,14 +169,6 @@ companies:
     tag: watch
     search_hints: ["新和環境"]
 
-  - name: クボタ
-    full_name: 株式会社クボタ
-    code: "6326"
-    listed: true
-    sector: 農機・建機
-    tag: client
-    search_hints: ["クボタ"]
-
   - name: キョウデン
     full_name: 株式会社キョウデン
     code: null
@@ -104,31 +177,6 @@ companies:
     tag: watch
     search_hints: ["キョウデン"]
     note: 旧東証 6881。2023 年に上場廃止。株価は追わない
-
-  - name: TDK
-    full_name: TDK株式会社
-    code: "6762"
-    listed: true
-    sector: 電子部品
-    tag: watch
-    search_hints: ["TDK"]
-
-  - name: サトーHD
-    full_name: サトーホールディングス株式会社
-    code: "6287"
-    listed: true
-    sector: 自動認識・バーコード
-    tag: watch
-    search_hints: ["サトーホールディングス"]
-
-  - name: パラマウントベッドHD
-    full_name: パラマウントベッドホールディングス株式会社
-    code: null
-    listed: false
-    sector: 医療・介護用ベッド
-    tag: client
-    search_hints: ["パラマウントベッド"]
-    note: 旧東証 7817。2025 年 11 月に MBO 成立で上場廃止。株価は追わない
 
   - name: MK樫山
     full_name: MK樫山株式会社
