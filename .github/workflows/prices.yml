@@ -2,8 +2,8 @@ name: fetch-prices
 
 on:
   schedule:
-    # 07:15 JST 月〜金（UTC 22:15 日〜木）。routine（08:00 JST）より前に走らせる
-    - cron: "15 22 * * 0-4"
+    # 毎日 07:15 JST（UTC 22:15）。routine（08:00 JST）より前に走らせる。休場日は差分なしで commit されない
+    - cron: "15 22 * * *"
   workflow_dispatch:
 
 permissions:
