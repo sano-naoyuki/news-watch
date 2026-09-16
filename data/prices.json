@@ -1,139 +1,150 @@
 {
-  "as_of": "2026-09-15",
-  "generated_at": "2026-09-15T09:34:52+0900",
+  "as_of": "2026-09-16",
+  "generated_at": "2026-09-16T09:15:04+0900",
   "note": "as_of は取得できた最新の営業日。stale に載った銘柄はそれより古い日付のデータ",
-  "stale": [],
+  "stale": [
+    "ダイセル",
+    "クボタ",
+    "三井物産",
+    "ヘリオステクノHD",
+    "サトーHD",
+    "日清食品HD",
+    "ワコールHD",
+    "日本精工NSK",
+    "江崎グリコ",
+    "日経平均"
+  ],
   "indices": [
     {
       "name": "日経平均",
       "code": null,
-      "date": "2026-09-15",
-      "close": 63598.4,
+      "date": "2026-09-14",
+      "close": 63493.0,
       "prev_close": 64011.3,
-      "change": -412.9,
-      "pct": -0.65,
+      "change": -518.4,
+      "pct": -0.81,
       "source": "yfinance"
     }
   ],
   "stocks": [
     {
-      "name": "ENEOS HD",
-      "code": "5020",
-      "date": "2026-09-15",
-      "close": 1415.0,
-      "prev_close": 1438.0,
-      "change": -23.0,
-      "pct": -1.6,
-      "source": "yfinance"
-    },
-    {
-      "name": "マクニカHD",
-      "code": "3132",
-      "date": "2026-09-15",
-      "close": 3700.0,
-      "prev_close": 3760.0,
-      "change": -60.0,
-      "pct": -1.6,
-      "source": "yfinance"
-    },
-    {
-      "name": "日本精工NSK",
-      "code": "6471",
-      "date": "2026-09-15",
-      "close": 1052.5,
-      "prev_close": 1042.5,
-      "change": 10.0,
-      "pct": 0.96,
-      "source": "yfinance"
-    },
-    {
       "name": "三井物産",
       "code": "8031",
       "date": "2026-09-15",
-      "close": 5131.0,
+      "close": 5069.0,
       "prev_close": 5164.0,
-      "change": -33.0,
-      "pct": -0.64,
+      "change": -95.0,
+      "pct": -1.84,
       "source": "yfinance"
     },
     {
       "name": "サトーHD",
       "code": "6287",
       "date": "2026-09-15",
-      "close": 2659.0,
+      "close": 2661.0,
       "prev_close": 2644.0,
-      "change": 15.0,
-      "pct": 0.57,
-      "source": "yfinance"
-    },
-    {
-      "name": "ヘリオステクノHD",
-      "code": "6927",
-      "date": "2026-09-15",
-      "close": 968.0,
-      "prev_close": 972.0,
-      "change": -4.0,
-      "pct": -0.41,
+      "change": 17.0,
+      "pct": 0.64,
       "source": "yfinance"
     },
     {
       "name": "ワコールHD",
       "code": "3591",
       "date": "2026-09-15",
-      "close": 4015.0,
+      "close": 4027.0,
       "prev_close": 4002.0,
-      "change": 13.0,
-      "pct": 0.32,
-      "source": "yfinance"
-    },
-    {
-      "name": "TDK",
-      "code": "6762",
-      "date": "2026-09-15",
-      "close": 2810.5,
-      "prev_close": 2816.5,
-      "change": -6.0,
-      "pct": -0.21,
+      "change": 25.0,
+      "pct": 0.62,
       "source": "yfinance"
     },
     {
       "name": "江崎グリコ",
       "code": "2206",
       "date": "2026-09-15",
-      "close": 5040.0,
+      "close": 5008.0,
       "prev_close": 5031.0,
-      "change": 9.0,
-      "pct": 0.18,
-      "source": "yfinance"
-    },
-    {
-      "name": "ダイセル",
-      "code": "4202",
-      "date": "2026-09-15",
-      "close": 1400.0,
-      "prev_close": 1402.0,
-      "change": -2.0,
-      "pct": -0.14,
-      "source": "yfinance"
-    },
-    {
-      "name": "クボタ",
-      "code": "6326",
-      "date": "2026-09-15",
-      "close": 2770.0,
-      "prev_close": 2773.0,
-      "change": -3.0,
-      "pct": -0.11,
+      "change": -23.0,
+      "pct": -0.46,
       "source": "yfinance"
     },
     {
       "name": "日清食品HD",
       "code": "2897",
       "date": "2026-09-15",
-      "close": 3007.0,
+      "close": 2996.0,
       "prev_close": 3006.0,
-      "change": 1.0,
-      "pct": 0.03,
+      "change": -10.0,
+      "pct": -0.33,
+      "source": "yfinance"
+    },
+    {
+      "name": "ダイセル",
+      "code": "4202",
+      "date": "2026-09-15",
+      "close": 1405.5,
+      "prev_close": 1402.0,
+      "change": 3.5,
+      "pct": 0.25,
+      "source": "yfinance"
+    },
+    {
+      "name": "日本精工NSK",
+      "code": "6471",
+      "date": "2026-09-15",
+      "close": 1045.0,
+      "prev_close": 1042.5,
+      "change": 2.5,
+      "pct": 0.24,
+      "source": "yfinance"
+    },
+    {
+      "name": "クボタ",
+      "code": "6326",
+      "date": "2026-09-15",
+      "close": 2767.0,
+      "prev_close": 2773.0,
+      "change": -6.0,
+      "pct": -0.22,
+      "source": "yfinance"
+    },
+    {
+      "name": "ヘリオステクノHD",
+      "code": "6927",
+      "date": "2026-09-15",
+      "close": 974.0,
+      "prev_close": 972.0,
+      "change": 2.0,
+      "pct": 0.21,
+      "source": "yfinance"
+    },
+    {
+      "name": "ENEOS HD",
+      "code": "5020",
+      "date": "2026-09-16",
+      "close": 1404.0,
+      "prev_close": 1404.0,
+      "change": 0.0,
+      "pct": 0.0,
+      "source": "yfinance"
+    },
+    {
+      "name": "TDK",
+      "code": "6762",
+      "date": "2026-09-16",
+      "close": 2833.5,
+      "prev_close": 2833.5,
+      "change": 0.0,
+      "pct": 0.0,
+      "source": "yfinance"
+    },
+    {
+      "name": "マクニカHD",
+      "code": "3132",
+      "date": "2026-09-16",
+      "close": 3828.0,
+      "prev_close": 3828.0,
+      "change": 0.0,
+      "pct": 0.0,
       "source": "yfinance"
     }
   ],
