@@ -1,6 +1,6 @@
 {
   "as_of": "2026-10-09",
-  "generated_at": "2026-10-09T11:05:56+0900",
+  "generated_at": "2026-10-10T10:44:37+0900",
   "note": "as_of は取得できた最新の営業日。stale に載った銘柄はそれより古い日付のデータ",
   "stale": [],
   "indices": [
@@ -8,102 +8,92 @@
       "name": "日経平均",
       "code": null,
       "date": "2026-10-09",
-      "close": 68607.2,
+      "close": 69030.9,
       "prev_close": 69042.1,
-      "change": -434.9,
-      "pct": -0.63,
+      "change": -11.2,
+      "pct": -0.02,
       "source": "yfinance"
     }
   ],
   "stocks": [
     {
-      "name": "マクニカHD",
-      "code": "3132",
-      "date": "2026-10-09",
-      "close": 4711.0,
-      "prev_close": 4529.0,
-      "change": 182.0,
-      "pct": 4.02,
-      "source": "yfinance"
-    },
-    {
       "name": "TDK",
       "code": "6762",
       "date": "2026-10-09",
-      "close": 3292.0,
+      "close": 3268.0,
       "prev_close": 3353.0,
-      "change": -61.0,
-      "pct": -1.82,
+      "change": -85.0,
+      "pct": -2.54,
       "source": "yfinance"
     },
     {
       "name": "日清食品HD",
       "code": "2897",
       "date": "2026-10-09",
-      "close": 2923.5,
+      "close": 2939.0,
       "prev_close": 2871.5,
-      "change": 52.0,
-      "pct": 1.81,
+      "change": 67.5,
+      "pct": 2.35,
       "source": "yfinance"
     },
     {
-      "name": "ダイセル",
-      "code": "4202",
+      "name": "マクニカHD",
+      "code": "3132",
       "date": "2026-10-09",
-      "close": 1463.5,
-      "prev_close": 1440.0,
-      "change": 23.5,
-      "pct": 1.63,
-      "source": "yfinance"
-    },
-    {
-      "name": "サトーHD",
-      "code": "6287",
-      "date": "2026-10-09",
-      "close": 2674.0,
-      "prev_close": 2634.0,
-      "change": 40.0,
-      "pct": 1.52,
+      "close": 4634.0,
+      "prev_close": 4529.0,
+      "change": 105.0,
+      "pct": 2.32,
       "source": "yfinance"
     },
     {
       "name": "ワコールHD",
       "code": "3591",
       "date": "2026-10-09",
-      "close": 3563.0,
+      "close": 3615.0,
       "prev_close": 3533.0,
+      "change": 82.0,
+      "pct": 2.32,
+      "source": "yfinance"
+    },
+    {
+      "name": "ダイセル",
+      "code": "4202",
+      "date": "2026-10-09",
+      "close": 1458.0,
+      "prev_close": 1440.0,
+      "change": 18.0,
+      "pct": 1.25,
+      "source": "yfinance"
+    },
+    {
+      "name": "サトーHD",
+      "code": "6287",
+      "date": "2026-10-09",
+      "close": 2664.0,
+      "prev_close": 2634.0,
       "change": 30.0,
-      "pct": 0.85,
-      "source": "yfinance"
-    },
-    {
-      "name": "江崎グリコ",
-      "code": "2206",
-      "date": "2026-10-09",
-      "close": 5033.0,
-      "prev_close": 4993.0,
-      "change": 40.0,
-      "pct": 0.8,
-      "source": "yfinance"
-    },
-    {
-      "name": "日本精工NSK",
-      "code": "6471",
-      "date": "2026-10-09",
-      "close": 1066.0,
-      "prev_close": 1074.0,
-      "change": -8.0,
-      "pct": -0.74,
+      "pct": 1.14,
       "source": "yfinance"
     },
     {
       "name": "ENEOS HD",
       "code": "5020",
       "date": "2026-10-09",
-      "close": 1365.0,
+      "close": 1364.5,
       "prev_close": 1356.5,
-      "change": 8.5,
-      "pct": 0.63,
+      "change": 8.0,
+      "pct": 0.59,
+      "source": "yfinance"
+    },
+    {
+      "name": "江崎グリコ",
+      "code": "2206",
+      "date": "2026-10-09",
+      "close": 5021.0,
+      "prev_close": 4993.0,
+      "change": 28.0,
+      "pct": 0.56,
       "source": "yfinance"
     },
     {
@@ -117,23 +107,33 @@
       "source": "yfinance"
     },
     {
+      "name": "日本精工NSK",
+      "code": "6471",
+      "date": "2026-10-09",
+      "close": 1068.5,
+      "prev_close": 1074.0,
+      "change": -5.5,
+      "pct": -0.51,
+      "source": "yfinance"
+    },
+    {
       "name": "三井物産",
       "code": "8031",
       "date": "2026-10-09",
-      "close": 4744.0,
+      "close": 4775.0,
       "prev_close": 4764.0,
-      "change": -20.0,
-      "pct": -0.42,
+      "change": 11.0,
+      "pct": 0.23,
       "source": "yfinance"
     },
     {
       "name": "クボタ",
       "code": "6326",
       "date": "2026-10-09",
-      "close": 2623.0,
+      "close": 2626.5,
       "prev_close": 2624.5,
-      "change": -1.5,
-      "pct": -0.06,
+      "change": 2.0,
+      "pct": 0.08,
       "source": "yfinance"
     }
   ],
