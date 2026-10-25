@@ -1,19 +1,17 @@
 {
   "as_of": "2026-10-23",
-  "generated_at": "2026-10-24T09:37:16+0900",
+  "generated_at": "2026-10-25T09:18:49+0900",
   "note": "as_of は取得できた最新の営業日。stale に載った銘柄はそれより古い日付のデータ",
-  "stale": [
-    "日経平均"
-  ],
+  "stale": [],
   "indices": [
     {
       "name": "日経平均",
       "code": null,
-      "date": "2026-10-22",
-      "close": 62907.8,
-      "prev_close": 64621.2,
-      "change": -1713.4,
-      "pct": -2.65,
+      "date": "2026-10-23",
+      "close": 62693.2,
+      "prev_close": 62907.8,
+      "change": -214.7,
+      "pct": -0.34,
       "source": "yfinance"
     }
   ],
