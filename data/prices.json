@@ -1,6 +1,6 @@
 {
   "as_of": "2026-11-02",
-  "generated_at": "2026-11-02T10:29:18+0900",
+  "generated_at": "2026-11-03T12:27:03+0900",
   "note": "as_of は取得できた最新の営業日。stale に載った銘柄はそれより古い日付のデータ",
   "stale": [],
   "indices": [
@@ -8,122 +8,122 @@
       "name": "日経平均",
       "code": null,
       "date": "2026-11-02",
-      "close": 63249.4,
+      "close": 63081.9,
       "prev_close": 63290.1,
-      "change": -40.7,
-      "pct": -0.06,
+      "change": -208.2,
+      "pct": -0.33,
       "source": "yfinance"
     }
   ],
   "stocks": [
     {
+      "name": "マクニカHD",
+      "code": "3132",
+      "date": "2026-11-02",
+      "close": 3705.0,
+      "prev_close": 3857.0,
+      "change": -152.0,
+      "pct": -3.94,
+      "source": "yfinance"
+    },
+    {
       "name": "TDK",
       "code": "6762",
       "date": "2026-11-02",
-      "close": 2472.0,
+      "close": 2515.0,
       "prev_close": 2572.0,
-      "change": -100.0,
-      "pct": -3.89,
+      "change": -57.0,
+      "pct": -2.22,
       "source": "yfinance"
     },
     {
       "name": "ヘリオステクノHD",
       "code": "6927",
       "date": "2026-11-02",
-      "close": 962.0,
+      "close": 960.0,
       "prev_close": 980.0,
-      "change": -18.0,
-      "pct": -1.84,
-      "source": "yfinance"
-    },
-    {
-      "name": "クボタ",
-      "code": "6326",
-      "date": "2026-11-02",
-      "close": 2639.0,
-      "prev_close": 2611.0,
-      "change": 28.0,
-      "pct": 1.07,
-      "source": "yfinance"
-    },
-    {
-      "name": "マクニカHD",
-      "code": "3132",
-      "date": "2026-11-02",
-      "close": 3820.0,
-      "prev_close": 3857.0,
-      "change": -37.0,
-      "pct": -0.96,
+      "change": -20.0,
+      "pct": -2.04,
       "source": "yfinance"
     },
     {
       "name": "三井物産",
       "code": "8031",
       "date": "2026-11-02",
-      "close": 4959.0,
+      "close": 4917.0,
       "prev_close": 5006.0,
-      "change": -47.0,
-      "pct": -0.94,
-      "source": "yfinance"
-    },
-    {
-      "name": "日本精工NSK",
-      "code": "6471",
-      "date": "2026-11-02",
-      "close": 993.2,
-      "prev_close": 1002.5,
-      "change": -9.3,
-      "pct": -0.93,
-      "source": "yfinance"
-    },
-    {
-      "name": "サトーHD",
-      "code": "6287",
-      "date": "2026-11-02",
-      "close": 2622.0,
-      "prev_close": 2642.0,
-      "change": -20.0,
-      "pct": -0.76,
-      "source": "yfinance"
-    },
-    {
-      "name": "ワコールHD",
-      "code": "3591",
-      "date": "2026-11-02",
-      "close": 3594.0,
-      "prev_close": 3615.0,
-      "change": -21.0,
-      "pct": -0.58,
+      "change": -89.0,
+      "pct": -1.78,
       "source": "yfinance"
     },
     {
       "name": "ENEOS HD",
       "code": "5020",
       "date": "2026-11-02",
-      "close": 1431.0,
+      "close": 1407.0,
       "prev_close": 1426.5,
-      "change": 4.5,
-      "pct": 0.32,
+      "change": -19.5,
+      "pct": -1.37,
+      "source": "yfinance"
+    },
+    {
+      "name": "サトーHD",
+      "code": "6287",
+      "date": "2026-11-02",
+      "close": 2608.0,
+      "prev_close": 2642.0,
+      "change": -34.0,
+      "pct": -1.29,
+      "source": "yfinance"
+    },
+    {
+      "name": "クボタ",
+      "code": "6326",
+      "date": "2026-11-02",
+      "close": 2641.5,
+      "prev_close": 2611.0,
+      "change": 30.5,
+      "pct": 1.17,
       "source": "yfinance"
     },
     {
       "name": "日清食品HD",
       "code": "2897",
       "date": "2026-11-02",
-      "close": 3049.0,
+      "close": 3050.0,
       "prev_close": 3040.0,
-      "change": 9.0,
-      "pct": 0.3,
+      "change": 10.0,
+      "pct": 0.33,
+      "source": "yfinance"
+    },
+    {
+      "name": "日本精工NSK",
+      "code": "6471",
+      "date": "2026-11-02",
+      "close": 999.9,
+      "prev_close": 1002.5,
+      "change": -2.6,
+      "pct": -0.26,
       "source": "yfinance"
     },
     {
       "name": "ダイセル",
       "code": "4202",
       "date": "2026-11-02",
-      "close": 1455.0,
+      "close": 1450.0,
       "prev_close": 1453.5,
-      "change": 1.5,
-      "pct": 0.1,
+      "change": -3.5,
+      "pct": -0.24,
+      "source": "yfinance"
+    },
+    {
+      "name": "ワコールHD",
+      "code": "3591",
+      "date": "2026-11-02",
+      "close": 3611.0,
+      "prev_close": 3615.0,
+      "change": -4.0,
+      "pct": -0.11,
       "source": "yfinance"
     },
     {
