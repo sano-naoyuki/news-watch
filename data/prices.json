@@ -1,6 +1,6 @@
 {
   "as_of": "2026-11-27",
-  "generated_at": "2026-11-27T13:11:59+0900",
+  "generated_at": "2026-11-28T12:52:24+0900",
   "note": "as_of は取得できた最新の営業日。stale に載った銘柄はそれより古い日付のデータ",
   "stale": [],
   "indices": [
@@ -8,14 +8,34 @@
       "name": "日経平均",
       "code": null,
       "date": "2026-11-27",
-      "close": 58512.5,
+      "close": 58711.1,
       "prev_close": 57499.2,
-      "change": 1013.3,
-      "pct": 1.76,
+      "change": 1211.9,
+      "pct": 2.11,
       "source": "yfinance"
     }
   ],
   "stocks": [
+    {
+      "name": "マクニカHD",
+      "code": "3132",
+      "date": "2026-11-27",
+      "close": 2990.0,
+      "prev_close": 2826.5,
+      "change": 163.5,
+      "pct": 5.78,
+      "source": "yfinance"
+    },
+    {
+      "name": "TDK",
+      "code": "6762",
+      "date": "2026-11-27",
+      "close": 2306.0,
+      "prev_close": 2209.0,
+      "change": 97.0,
+      "pct": 4.39,
+      "source": "yfinance"
+    },
     {
       "name": "ENEOS HD",
       "code": "5020",
@@ -27,83 +47,63 @@
       "source": "yfinance"
     },
     {
-      "name": "TDK",
-      "code": "6762",
-      "date": "2026-11-27",
-      "close": 2300.5,
-      "prev_close": 2209.0,
-      "change": 91.5,
-      "pct": 4.14,
-      "source": "yfinance"
-    },
-    {
-      "name": "マクニカHD",
-      "code": "3132",
-      "date": "2026-11-27",
-      "close": 2941.0,
-      "prev_close": 2826.5,
-      "change": 114.5,
-      "pct": 4.05,
-      "source": "yfinance"
-    },
-    {
       "name": "クボタ",
       "code": "6326",
       "date": "2026-11-27",
-      "close": 2458.5,
+      "close": 2465.5,
       "prev_close": 2375.5,
-      "change": 83.0,
-      "pct": 3.49,
+      "change": 90.0,
+      "pct": 3.79,
       "source": "yfinance"
     },
     {
       "name": "日本精工NSK",
       "code": "6471",
       "date": "2026-11-27",
-      "close": 906.8,
+      "close": 907.6,
       "prev_close": 878.8,
-      "change": 28.0,
-      "pct": 3.19,
-      "source": "yfinance"
-    },
-    {
-      "name": "三井物産",
-      "code": "8031",
-      "date": "2026-11-27",
-      "close": 4700.0,
-      "prev_close": 4595.0,
-      "change": 105.0,
-      "pct": 2.29,
-      "source": "yfinance"
-    },
-    {
-      "name": "ヘリオステクノHD",
-      "code": "6927",
-      "date": "2026-11-27",
-      "close": 831.0,
-      "prev_close": 813.0,
-      "change": 18.0,
-      "pct": 2.21,
-      "source": "yfinance"
-    },
-    {
-      "name": "ダイセル",
-      "code": "4202",
-      "date": "2026-11-27",
-      "close": 1526.5,
-      "prev_close": 1496.5,
-      "change": 30.0,
-      "pct": 2.0,
+      "change": 28.8,
+      "pct": 3.28,
       "source": "yfinance"
     },
     {
       "name": "ワコールHD",
       "code": "3591",
       "date": "2026-11-27",
-      "close": 3948.0,
+      "close": 3891.0,
       "prev_close": 3994.0,
-      "change": -46.0,
-      "pct": -1.15,
+      "change": -103.0,
+      "pct": -2.58,
+      "source": "yfinance"
+    },
+    {
+      "name": "三井物産",
+      "code": "8031",
+      "date": "2026-11-27",
+      "close": 4688.0,
+      "prev_close": 4595.0,
+      "change": 93.0,
+      "pct": 2.02,
+      "source": "yfinance"
+    },
+    {
+      "name": "ヘリオステクノHD",
+      "code": "6927",
+      "date": "2026-11-27",
+      "close": 828.0,
+      "prev_close": 813.0,
+      "change": 15.0,
+      "pct": 1.85,
+      "source": "yfinance"
+    },
+    {
+      "name": "ダイセル",
+      "code": "4202",
+      "date": "2026-11-27",
+      "close": 1516.0,
+      "prev_close": 1496.5,
+      "change": 19.5,
+      "pct": 1.3,
       "source": "yfinance"
     },
     {
@@ -120,20 +120,20 @@
       "name": "江崎グリコ",
       "code": "2206",
       "date": "2026-11-27",
-      "close": 5080.0,
+      "close": 5050.0,
       "prev_close": 5072.0,
-      "change": 8.0,
-      "pct": 0.16,
+      "change": -22.0,
+      "pct": -0.43,
       "source": "yfinance"
     },
     {
       "name": "日清食品HD",
       "code": "2897",
       "date": "2026-11-27",
-      "close": 2853.0,
+      "close": 2840.5,
       "prev_close": 2849.5,
-      "change": 3.5,
-      "pct": 0.12,
+      "change": -9.0,
+      "pct": -0.32,
       "source": "yfinance"
     }
   ],
